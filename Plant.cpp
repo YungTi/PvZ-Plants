@@ -1,8 +1,8 @@
 #include"Plant.h"
 
 //----------Plant----------
-Plant::Plant(){
-    this->hp=0;
+Plant::Plant(const int h){
+    this->hp=h;
 }
 
 int Plant::playerAct(){
@@ -26,6 +26,8 @@ int Plant::returnHp(){
     return this->hp;
 }
 
+void Plant::printPlant(){
+}
 
 
 

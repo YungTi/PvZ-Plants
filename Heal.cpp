@@ -4,8 +4,7 @@ int Heal::max_hp;
 int Heal::cost;
 int Heal::points;
 //----------Heal----------
-Heal::Heal(){
-    points=0;
+Heal::Heal():Plant(max_hp){
 }
 void Heal::initHeal(const int MH,const int C,const int P){
     max_hp=MH;

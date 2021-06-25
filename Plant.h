@@ -6,9 +6,10 @@
 
 class Plant{
 public:
-    Plant();
+    Plant(const int h);
     virtual int playerAct();
     virtual int zombieAct(Zombie &obj);
+    virtual void printPlant();
     void setHp(const int H);
     int returnHp();
     friend class Zombie;

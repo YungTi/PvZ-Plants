@@ -6,11 +6,7 @@ int Coin::cost;
 int Coin::rounds;
 int Coin::earn;
 //----------Coin----------
-Coin::Coin(){
-    max_hp=0;
-    rounds=0;
-    this->cd=0;
-    earn=0;
+Coin::Coin():Plant(max_hp),cd(rounds){
 }
 
 void Coin::initCoin(const int MH,const int C,const int R,const int E){

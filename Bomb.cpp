@@ -3,8 +3,7 @@
 int Bomb::max_hp;
 int Bomb::cost;
 //----------Bomb----------
-Bomb::Bomb(){
-    max_hp=0;
+Bomb::Bomb():Plant(max_hp){
 }
 
 void Bomb::initBomb(const int MH,const int C){
