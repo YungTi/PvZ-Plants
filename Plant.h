@@ -11,7 +11,6 @@ public:
     virtual int zombieAct(Zombie &obj);
     void setHp(const int H);
     int returnHp();
-    int returnCost();
     friend class Zombie;
 private:
     int hp;
