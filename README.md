@@ -16,7 +16,6 @@ Plant:
 !!!maxhp跟cost改為每種植物一個
 
 Bomb:
-Bomb:
 
 1.initBomb(MH,C): 傳入並設定最大血量及耗費。
 
