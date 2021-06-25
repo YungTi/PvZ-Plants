@@ -5,10 +5,15 @@
 class Bomb:public Plant{
 public:
     //constructor
-    Bomb(const int mh,const int c);
-
+    Bomb();
+    void initBomb(const int mh,const int c);
     virtual int zombieAct(Zombie &obj);
     virtual void printPlant();
+    int returnMaxHp();
+    int returnCost();
+private:
+    static int max_hp;
+    static int cost;
 };
 
 #endif // BOMB_H_INCLUDED

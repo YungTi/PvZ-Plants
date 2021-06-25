@@ -5,12 +5,16 @@
 class Horn:public Plant{
 public:
     //constructor
-    Horn(const int MH,const int C,const int A);
+    Horn();
+    void initHorn(const int MH,const int C,const int A);
     virtual int zombieAct(Zombie &obj);
     virtual void printPlant();
-    int returnATK();
+    int returnMaxHp();
+    int returnCost();
 private:
-    int atk=0;
+    static int max_hp;
+    static int atk;
+    static int cost;
 };
 
 #endif // HORN_H_INCLUDED

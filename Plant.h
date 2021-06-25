@@ -6,23 +6,16 @@
 
 class Plant{
 public:
-
+    Plant();
     virtual int playerAct();
     virtual int zombieAct(Zombie &obj);
-    //virtual void printPlant();
-    void setMaxHp(const int MH);
     void setHp(const int H);
-    void setCost(const int C);
-    int returnMaxHp();
     int returnHp();
     int returnCost();
     friend class Zombie;
 private:
-    int max_hp=0;
-    int hp=0;
-    int cost=0;
+    int hp;
 };
-
 
 
 #endif // PLANT_H_INCLUDED

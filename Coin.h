@@ -5,14 +5,18 @@
 class Coin:public Plant{
 public:
     //constructor
-    Coin(const int MH,const int C,const int R,const int E);
-
+    Coin();
+    void initCoin(const int MH,const int C,const int R,const int E);
     virtual int playerAct();
     virtual void printPlant();
+    int returnMaxHp();
+    int returnCost();
 private:
-    int rounds=0;
+    static int max_hp;
+    static int cost;
+    static int rounds;
     int cd=0;
-    int earn=0;
+    static int earn;
 };
 
 #endif // COIN_H_INCLUDED

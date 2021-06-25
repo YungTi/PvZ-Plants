@@ -1,19 +1,32 @@
 #include"Heal.h"
 
-
+int Heal::max_hp;
+int Heal::cost;
+int Heal::points;
 //----------Heal----------
-Heal::Heal(const int MH,const int C,const int P){
-    setMaxHp(MH);
+Heal::Heal(){
+    points=0;
+}
+void Heal::initHeal(const int MH,const int C,const int P){
+    max_hp=MH;
     setHp(MH);
-    setCost(C);
-    this->points=P;
+    cost=C;
+    points=P;
 }
 
 int Heal::playerAct(){
-    std::cout<<"All your plants have recovered "<<this->points<<" HP!"<<std::endl;
-    return this->points;
+    std::cout<<"All your plants have recovered "<<points<<" HP!"<<std::endl;
+    return points;
 }
 
 void Heal::printPlant(){
     std::cout<<"Healflower HP:"<<returnHp()<<std::endl;
+}
+
+int Heal::returnMaxHp(){
+    return max_hp;
+}
+
+int Heal::returnCost(){
+    return cost;
 }

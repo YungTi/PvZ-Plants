@@ -5,12 +5,17 @@
 class Heal:public Plant{
 public:
     //constructor
-    Heal(const int MH,const int C,const int P);
-
+    Heal();
+    void initHeal(const int MH,const int C,const int P);
     virtual int playerAct();
     virtual void printPlant();
+    int returnMaxHp();
+    int returnCost();
 private:
-    int points=0;
+    static int max_hp;
+    static int cost;
+    static int points;
 };
+
 
 #endif // HEAL_H_INCLUDED
